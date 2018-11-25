@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="action.js"></script>
+</head>
+<!--导航条-->
+<div class="header">
+    <div class="navBar">
+        <div class="logo">
+            <div class="mao"><strong>M</strong><span>ao</span></div>
+        </div>
+        <nav>
+            <li><a href="index.html"> 主页</a></li>
+            <li><a href="#introduction">个人介绍</a></li>
+            <li><a href="#skill">掌握技能</a></li>
+            <li><a href="#group">成长历程</a></li>
+            <li><a href="#develop">发展方向</a></li>
+            <li><a href="#contact">联系我</a></li>
+            <input type="text" placeholder="请输入...">
+        </nav>
+    </div>
+</div>
+
+    <div id="introduction">
+        <div class="title">
+            <p>_________________________________
+            个人介绍
+            _____________________________________
+            </p>
+        </div>
+        <table align="center">
+            <tr>
+                <td colspan="3" align="center"><img src="images/pic1.jpg" class="pic"></td>
+            </tr>
+            <tr>
+                <td>姓名：蒋星艳</td>
+                <td>年龄：21</td>
+                <td>学校：三江学院</td>
+            </tr>
+            <tr>
+                <td>学历：本科</td>
+                <td>专业：软件工程</td>
+            </tr>
+            <tr>
+                <td colspan="3">爱好：看电影、打羽毛球、唱歌</td>
+            </tr>
+            <tr>
+                <td colspan="3">个人标签：</td>
+            </tr>
+            <tr>
+                <td colspan="3"><img src="images/个人标签.png"> </td>
+            </tr>
+        </table>
+    </div><!--introduction-->
+
+    <div id="skill">
+    <!--商品卡片-->
+        <div class="title">
+            <p>_________________________________
+            掌握技能
+            _____________________________________
+        </p>
+        </div>
+        <div class="cardGroup">
+            <div class="card">
+                <img src="images/card1.jpg">
+                <p>html,html5</p>
+            </div>
+            <div class="skillDesc">
+                熟悉常用的HTML排版和内容，了解HTML5带语义的布局元素，新增的表单元素，浮动框架，
+                程序控制视频，Canvas和SVG等
+            </div>
+
+            <div class="card">
+                <img src="images/card2.jpg">
+                <p>CSS,CSS3</p>
+            </div>
+            <div class="skillDesc">
+                熟悉常用的css样式，熟练用DIV+CSS布局，了解CSS3圆角边框，阴影，CSS盒子，渐变，
+                2D，3D，动画，多列，按钮样式等
+            </div>
+
+            <div class="card">
+                <img src="images/card3.jpg">
+                <p>javaScript,jQuery</p>
+            </div>
+            <div class="skillDesc">
+                了解js基本语法和DOM操作，了解jQuery事件和各种效果
+            </div>
+
+            <div class="card">
+                <img src="images/card4.jpg">
+                <p>DW,WebStorm,HBuilder</p>
+            </div>
+            <div class="skillDesc">
+                熟悉网页开发工具
+            </div>
+
+            <div class="card">
+                <img src="images/card5.jpg">
+                <p>c,java</p>
+            </div>
+            <div class="skillDesc">
+                了解c,java，linux等编程语言，熟悉语法和环境
+            </div>
+
+            <div class="card">
+                <img src="images/card6.jpg">
+                <p>sql,mysql，oracle</p>
+            </div>
+            <div class="skillDesc">
+                了解数据库的增删改查等
+            </div>
+        </div>
+    </div><!--skill-->
+
+    <div id="group">
+    <!--登录form-->
+        <div class="title">
+            <p>_________________________________
+                成长历程
+                _____________________________________
+            </p>
+        </div>
+        <div class="form">
+            <div class="login">
+                <h2>用户登录&nbsp;&nbsp;&nbsp;&nbsp;<strong>Login</strong></h2>
+                <input type="text" class="it1" placeholder="请输入用户名...">
+                <input type="password" class="it2" placeholder="请输入密码...">
+                <input type="text" class="it3" placeholder="请输入验证码...">
+                <button type="submit" class="button1" onclick=alert("现在还登录不进去啦！")>登录</button>
+                <button type="button" class="button2" onclick=alert("功能开发中......")>注册</button>
+                <p><a href="#" onclick=alert("我也不知道怎么办")>忘记密码？</a></p>
+            </div>
+        </div><!--form-->
+        <div class="desc">
+            <h2>想说的话</h2>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想说的大概分为两个方面：一个方面是对于这个网页的，
+                另一方面是对于我个人的。
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这个网页包括了一些目前我会的东西，html的锚点，
+                float浮动，定位，优先级，css3的透明度，边框圆角，阴影，按钮。了解了一些关于解决
+                浏览器兼容的方法但是目前没有解决兼容问题的实践经验。由于时间有限，没有来得及完善
+                这个网页和做一些我学过的东西，我希望能够在实践中，一边学习,一边完善。
+                <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正如我的个人标签一样，我是一个对事情认真负责，
+                努力学习的人，虽然可能和别人比起来，不是那么善于表达自己，但是我希望能够有一份
+                工作的机会，在工作中体现我的工作能力和学习能力，期望得到一次面试机会!
+            </p>
+        </div>
+    </div>  <!--group-->
+
+    <div id="develop">
+        <div class="title">
+            <p>_________________________________
+                发展方向
+                _____________________________________
+            </p>
+        </div>
+        <div class="up">
+            <div class="upPer">
+                <img src="images/uesrname.png">
+            </div>
+        </div>
+        <button type="button" class="button3">为她加油</button>
+    </div><!--develop-->
+
+    <div id="contact">
+        <div class="title">
+            <p>_________________________________
+                联系我
+                _____________________________________
+            </p>
+        </div>
+        <div class="contactCardGroup">
+            <p>可以通过三种方式找到我</p>
+            <div class="contactCard">
+                <img src="images/phone.png">
+                <p>
+                    手机<br>
+                    15895436826
+                </p>
+            </div>
+            <div class="contactCard">
+                <img src="images/email.png">
+                <p>
+                    邮箱<br>
+                    1183277020@qq.com
+                </p>
+            </div>
+            <div class="contactCard">
+                <img src="images/talk.png">
+                <p>
+                    QQ<br>
+                    1183277020
+                </p>
+            </div>
+        </div>
+
+    </div><!--contact-->
+
+    <div id="footer">
+        <p>等待你的<span>捕获...</span></p>
+        <p><br>
+            个人网站|自我介绍|图片源自网络，侵删
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            联系我：QQ:1183277020<br><br>
+            邮箱：1183277020@qq.com
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            手机号：15895436826
+        </p>
+    </div>
+
+</body>
+</html>
