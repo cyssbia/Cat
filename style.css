@@ -34,6 +34,9 @@ body{
 span{
     color: Hotpink;
 }
+strong{
+    color: lightgrey;
+}
 .mao{
     margin-left: 20px;
     font-size: 50px;
@@ -73,24 +76,39 @@ a:hover{
     color: #adadad;
 }
 
+input{
+    background: rgba(255,255,255,0.05);       /*input的透明度*/
+    color: white;
+    width: 210px;
+    height: 30px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    margin: 10px;
+}
+input:hover{
+    box-shadow: 0.5px 0.5px 4px #555555;
+}
+
 /*标题栏*/
 .title{
     width: 100%;
     height: 50px;
     position: relative;
     top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 .title p{
-    margin-left: 310px;
+    margin-top: 0;
     color: #222222;
     font-size: 20px;
-    margin-top: 0;
+    display: inline-block;
 }
 
 /*个人介绍*/
 #introduction{
     width:100%;
-    height:500px;
+    height:520px;
     color: black;
 }
 
@@ -138,8 +156,9 @@ table td{
 }
 
 .card p{
-    font-size: 20px;
+    font-size: 16px;
     color: #222222;
+    margin-top: 14px;
 }
 
 .skillDesc{
@@ -163,87 +182,33 @@ img{
     background-color: #1b6d85;
 
 }
-/*登录form*/
-.form{
+
+/*成长历程step*/
+#accordion{
     width: 500px;
-    height:400px;
+    height:280px;
     float: left;
-    padding-top: 50px;
+    padding-top: 10px;
+    margin-top: 100px;
+    margin-left: 50px;
+    border-left: 2px solid #222222;
 }
 
-.login{
-    width: 250px;
-    height:360px;
-    background-image: url("images/4.jpg");
-    margin-left: 100px;
-    padding-left: 40px;
-    padding-right: 20px;
-    border: 1px solid #222222;
-    border-radius: 10px;
-    color: #1b6d85;
-    box-shadow: 5px 5px 5px #222222;
-}
-strong{
-    color: lightgrey;
-}
-input{
-    background: rgba(255,255,255,0.05);       /*input的透明度*/
-    color: white;
-    width: 210px;
-    height: 30px;
-    border: 1px solid #555555;
-    border-radius: 4px;
-    margin: 10px;
-}
-input:hover{
-    box-shadow: 0.5px 0.5px 4px #555555;
+#accordion .panel{
+    width: 400px;
+    height: 50px;
+    color: #222222;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 18px;
 }
 
-.button1{
-    width: 100px;
-    height: 30px;
-    background-color:#1b6d85;
-    border: 2px solid #1b6d85;
-    border-radius: 5px;
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: white;
-}
-.button1:hover{
-    border: 2px solid #204d74;
-    background-color:#204d74;
-    color: white;
-}
-.button1:active{                               /*按下button1的效果*/
-    border: 2px solid #204d74;
-    background-color:#204d74;
-    color: white;
-    transform: translateY(2px);
+.panel p{
+    margin: 0;
+    padding: 0;
+    color: black;
 }
 
-.button2{
-    width: 100px;
-    height: 30px;
-    background-color: #449d44;
-    border: 2px solid #449d44;
-    border-radius: 5px;
-    float: left;
-    margin-top: 10px;
-    margin-left: 10px;
-    color: white;
-}
-.button2:hover{
-    background-color: #3c763d;
-    border: 2px solid #3c763d;
-    color: white;
-}
-.button2:active{                                /*按下button2的效果*/
-    background-color: #3c763d;
-    border: 2px solid #3c763d;
-    color: white;
-    transform: translateY(2px);
-}
 p{
     color: #999999;
     font-size: 14px;
@@ -347,6 +312,10 @@ p{
     background-color: antiquewhite;
     float: left;
     margin: 80px;
+}
+
+.contactCard:hover{
+    box-shadow: 4px 4px 10px firebrick;
 }
 
 .contactCard p{

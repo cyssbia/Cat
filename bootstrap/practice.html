@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="prastyle.css">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!-- 固定在顶部 -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapse1">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Cat</a>
+            </div><!-- /.navbar-header -->
+
+            <div class="collapse navbar-collapse navbar-left" id="myCollapse1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">菜单1</a></li>
+                    <li><a href="#">菜单2</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            菜单3<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">子菜单1</a></li>
+                            <li><a href="#">子菜单2</a></li>
+                            <li><a href="#">子菜单3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.collapse -->
+
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="请输入">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+
+            <p class="navbar-text">响应式导航条固定顶部</p>
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- 轮播-->
+        <!-- 轮播容器 -->
+        <div id="myCarousel" class="carousel slide">
+            <!-- 轮播指针 -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="3" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="4" class="active"></li>
+            </ol>
+            <!-- 轮播项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="images/slide1.jpg">
+                    <div class="carousel caption text-center"><h5>图片一</h5></div>
+                </div>
+                <div class="item">
+                    <img src="images/slide2.jpg">
+                    <div class="carousel caption text-center"><h5>图片二</h5></div>
+                </div>
+                <div class="item">
+                    <img src="images/slide3.jpg">
+                    <div class="carousel caption text-center"><h5>图片三</h5></div>
+                </div>
+                <div class="item">
+                    <img src="images/slide4.jpg">
+                    <div class="carousel caption text-center"><h5>图片四</h5></div>
+                </div>
+                <div class="item">
+                    <img src="images/slide5.jpg">
+                    <div class="carousel caption text-center"><h5>图片五</h5></div>
+                </div>
+            </div>
+            <!-- 轮播导航 -->
+            <a href="#myCarousel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+            <a href="#myCarousel" class="carousel-control right" data-slide="next">&rsaquo;</a>
+        </div>
+    <!--标签页-->
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#tab1" data-toggle="tab">tab1</a></li>
+        <li><a href="#tab2" data-toggle="tab">tab2</a></li>
+        <li><a href="#tab3" data-toggle="tab">tab3</a></li>
+        <li><a href="#tab4" data-toggle="tab">tab4</a></li>
+    </ul>
+
+    <!--标签页的内容-->
+    <div class="tab-content">
+        <div id="tab1" class="tab-pane active">
+            <!--tab1中的表单-->
+            <form action="#" method="post" class="message">
+                <fieldset>
+                    <legend>个人信息</legend>
+                    <div class="form-group has-error has-feedback">
+                        <label class="control-label">用户名</label>
+                        <input type="text" placeholder="请输入用户名" class="form-control">
+                        <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                        <span class="help-block">用户名不能包含敏感词汇和标点符号</span>
+                    </div>
+                    <div class="form-group has-success has-feedback">
+                        <label class="control-label">设置密码</label>
+                        <input type="password" placeholder="请输入密码" class="form-control">
+                        <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="sex">性别</label>
+                        <label for="radio1" class="radio-inline">
+                            <input type="radio" id="radio1" name="sex">男
+                        </label>
+                        <label for="radio2" class="radio-inline">
+                            <input type="radio" id="radio2" name="sex">女
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">年龄</label>
+                        <input type="number" max="50" min="1" step="1" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="birth">出生日期</label>
+                        <input type="date" name="birth" min="1900-1-1" max="2018-7-16" value="1991-9-23" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="palce">地区</label>
+                        <select class="form-control">
+                            <optgroup label="江苏省">
+                                <option>苏州市</option>
+                                <option>南京市</option>
+                                <option>无锡市</option>
+                            </optgroup>
+                            <optgroup label="浙江省">
+                                <option>杭州市</option>
+                                <option>宁波市</option>
+                                <option>温州市</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">手机号</label>
+                        <input type="tel" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="file">上传头像</label>
+                        <input type="file">
+                    </div>
+                    <div class="form-group">
+                        <label for="introduce">个人简介</label>
+                        <textarea cols="70" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary">提交表单</button>
+                        <button type="button" class="btn btn-link">有疑问？</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div><!--/.tab-pane1-->
+
+        <div id="tab2"class="tab-pane">
+            <!--tab2中的面板和表格-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">用户注册情况</div>
+                <div class="panel-body">
+                    以下是目前注册的用户信息
+                    <table class="table table-hover table-bordered table-striped table-responsive">
+                        <thead>
+                        <tr>
+                            <th>用户名</th>
+                            <th>性别</th>
+                            <th>年龄</th>
+                            <th>地区</th>
+                            <th>手机号</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>蒋一</td>
+                            <td>男</td>
+                            <td>20</td>
+                            <td>苏州</td>
+                            <td>1111111****</td>
+                        </tr>
+                        <tr>
+                            <td>陆二</td>
+                            <td>男</td>
+                            <td>21</td>
+                            <td>无锡</td>
+                            <td>2222222****</td>
+                        </tr>
+                        <tr>
+                            <td>张三</td>
+                            <td>女</td>
+                            <td>22</td>
+                            <td>宁波</td>
+                            <td>3333333****</td>
+                        </tr>
+                        <tr>
+                            <td>李四</td>
+                            <td>男</td>
+                            <td>23</td>
+                            <td>杭州</td>
+                            <td>4444444****</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!--/.panel-body-->
+            </div><!--/.panel-->
+        </div><!--/.tab-pane2-->
+
+        <div id="tab3"class="tab-pane">
+            <!--tab3中的面板和图片文字-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">用户个人简介</div>
+                <div class="panel-body">
+                    <!-- 媒体对象-->
+                    <div class="media">
+                        <a class="media-left">
+                            <img src="image/id1.jpg">
+                        </a>
+                        <div class="media-body">
+                            <p>蒋一是一个十分开朗活泼的女孩，她喜欢摄影，经常拍一些好看的图片。</p>
+                            <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                加他为好友</button>
+                        </div>
+                        <br>
+                        <a class="media-left">
+                            <img src="image/id2.jpg">
+                        </a>
+                        <div class="media-body">
+                            <p>陆二是一个比较内向的男孩子，他不擅长社交，给人看到的经常只是他的背影。</p>
+                            <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                加他为好友</button>
+                        </div>
+                        <br>
+                        <a class="media-left">
+                            <img src="image/id3.jpg">
+                        </a>
+                        <div class="media-body">
+                            <p>张三是一个害羞的小女生，她喜欢毛绒玩具，每次出门都要带着一只小玩偶。</p>
+                            <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                加他为好友</button>
+                        </div>
+                        <br>
+                        <a class="media-left">
+                            <img src="image/id4.jpg">
+                        </a>
+                        <div class="media-body">
+                            <p>李四是一个喜欢独来独往的女生，很少人了解到她的事情，比较孤僻。</p>
+                            <button type="button" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                加他为好友</button>
+                        </div>
+                        <br>
+                    </div><!--/.media-->
+                </div><!--/.panel-body-->
+            </div><!--/.panel-->
+        </div><!--/.tab-pane3-->
+
+        <div id="tab4"class="tab-pane">
+            <!--tab4中的面板和表格-->
+            <div class="panel panel-primary">
+                <div class="panel-heading">联系我们</div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label">用户名</label>
+                        <input type="text" placeholder="请输入用户名" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="number">联系方式</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="problem">提问</label>
+                        <textarea cols="70" rows="5" class="form-control"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-primary">提交问题</button>
+                    </div>
+                </div><!--/.panel-body-->
+            </div><!--/.panel-->
+        </div><!--/.tab-pane4-->
+    </div><!--tableContent-->
+
+    <!--footer-->
+    <div class="footer">
+        <p>关于我们|网站建设|html+css|进一步完善|联系我们</p>
+        <p>联系方式：QQ：1183277020</p>
+        <p>手机号：15895436826</p>
+        <p>邮箱:1183277020@qq.com</p>
+    </div>
+
+</body>
+</html>

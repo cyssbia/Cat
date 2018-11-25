@@ -23,4 +23,8 @@ $(document).ready(function(){
             left:'+=88px'
         });
     });
+
+    $("#accordion").accordion({
+
+    });
 });

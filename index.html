@@ -5,6 +5,8 @@
     <title>主页</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery.accordion.min.js"></script>
+    <script src="jquery.accordion.pack.js"></script>
     <script src="action.js"></script>
 </head>
 <!--导航条-->
@@ -72,7 +74,7 @@
             </div>
             <div class="skillDesc">
                 熟悉常用的HTML排版和内容，了解HTML5带语义的布局元素，新增的表单元素，浮动框架，
-                程序控制视频，Canvas和SVG等
+                Canvas和SVG等
             </div>
 
             <div class="card">
@@ -89,15 +91,15 @@
                 <p>javaScript,jQuery</p>
             </div>
             <div class="skillDesc">
-                了解js基本语法和DOM操作，了解jQuery事件和各种效果
+                了解js基本语法和DOM操作、结构层 、表示层与行为层的分离，能够用jQuery实现一些效果
             </div>
 
             <div class="card">
                 <img src="images/card4.jpg">
-                <p>DW,WebStorm,HBuilder</p>
+                <p>DW,WebStorm,HBuilder,git</p>
             </div>
             <div class="skillDesc">
-                熟悉网页开发工具
+                熟悉网页开发工具,能使用git将网页上传到github
             </div>
 
             <div class="card">
@@ -105,7 +107,7 @@
                 <p>c,java</p>
             </div>
             <div class="skillDesc">
-                了解c,java，linux等编程语言，熟悉语法和环境
+                了解c,java，linux等编程语言，熟悉语法和逻辑
             </div>
 
             <div class="card">
@@ -126,17 +128,22 @@
                 _____________________________________
             </p>
         </div>
-        <div class="form">
-            <div class="login">
-                <h2>用户登录&nbsp;&nbsp;&nbsp;&nbsp;<strong>Login</strong></h2>
-                <input type="text" class="it1" placeholder="请输入用户名...">
-                <input type="password" class="it2" placeholder="请输入密码...">
-                <input type="text" class="it3" placeholder="请输入验证码...">
-                <button type="submit" class="button1" onclick=alert("现在还登录不进去啦！")>登录</button>
-                <button type="button" class="button2" onclick=alert("功能开发中......")>注册</button>
-                <p><a href="#" onclick=alert("我也不知道怎么办")>忘记密码？</a></p>
+
+        <div id="accordion">
+            <div class="panel">step 1 熟悉html+div布局,html5，css3
+                <p><a href="css3/practice.html" target="_blank">->css3 demo</a></p>
+            </div>
+            <div class="panel">step 2 学习bootstrap
+                <p><a href="bootstrap/practice.html" target="_blank">->bootstrap demo</a></p>
+            </div>
+            <div class="panel">step 3 学习javaScript、jQuery
+                <p><a href="#">->jQuery demo</a></p>
+            </div>
+            <div class="panel">step 4 了解git、github
+                <p><a href="https://github.com/cyssbia/Cat" target="_blank">->github</a></p>
             </div>
         </div><!--form-->
+
         <div class="desc">
             <h2>想说的话</h2>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我想说的大概分为两个方面：一个方面是对于这个网页的，
@@ -182,7 +189,7 @@
                 <img src="images/phone.png">
                 <p>
                     手机<br>
-                    15895436826
+                    18120160352
                 </p>
             </div>
             <div class="contactCard">
@@ -212,7 +219,7 @@
             邮箱：1183277020@qq.com
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            手机号：15895436826
+            手机号：18120160352
         </p>
     </div>
 

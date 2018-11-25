@@ -1,0 +1,34 @@
+body{
+    padding-top:50px;
+}
+
+.navbar-brand{
+    font-size: 28px;
+}
+.carousel{
+    width:1200px;
+    height:640px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:50px;
+}
+
+.tab-content{
+    background-color: black;
+    background: transparent;
+}
+.message{
+    border-left:1px #CCCCCC solid;
+    border-right:1px #CCCCCC solid;
+    padding:100px;
+}
+
+
+/*footer*/
+.footer{
+    height:200px;
+    background:#000;
+    padding-top:50px;
+    margin-top:50px;
+    text-align:center;
+}
