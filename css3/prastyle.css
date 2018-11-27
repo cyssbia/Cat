@@ -1,3 +1,47 @@
+/*ÂÖ²¥*/
+.header{
+    width: 1000px;
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.banner{
+    width: 4000px;
+    height: 500px;
+    position: relative;
+    animation: move 12s linear infinite normal;
+}
+@keyframes move{
+    0%{
+        left: 0px;
+    }
+    5%{
+        left: 0px;
+    }
+    30%{
+        left: -1000px;
+    }
+    35%{
+        left: -1000px;
+    }
+    60%{
+        left: -2000px;
+    }
+    65%{
+        left: -2000px;
+    }
+    95%{
+        left: -3000px;
+    }
+    100%{
+        left: -3000px;
+    }
+}
+.banner img{
+    width: 1000px;
+    height: 500px;
+}
+
 /*½¥±ä*/
 .gradient{
     width: 100%;
@@ -85,10 +129,10 @@
     position: relative;
     top: 0px;
     left: 100px;
-    animation: move 2s linear infinite alternate;
+    animation: pellet 2s linear infinite alternate;
 }
 
-@-moz-keyframes move{
+@-moz-keyframes pellet{
     0%{
         top: 0px;
         left: 100px;

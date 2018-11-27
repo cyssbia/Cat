@@ -11,12 +11,12 @@ body{
 /*头部*/
 .header{
     width: 100%;
-    height: 500px;
+    height: 490px;
     position:relative;
     top: 0px;
+    overflow: hidden;
     background-image: url("images/9.png");
 }
-
 /*导航条*/
 .navBar{
     width:100%;
@@ -26,7 +26,6 @@ body{
     background-color: rgba(34,34,34,0.8);                /*导航条透明*/
     z-index: 999;
 }
-
 /*Mao的logo*/
 .logo{
     float: left;
@@ -41,7 +40,6 @@ strong{
     margin-left: 20px;
     font-size: 50px;
 }
-
 /*导航栏*/
 nav{
     position: absolute;
@@ -88,6 +86,45 @@ input{
 input:hover{
     box-shadow: 0.5px 0.5px 4px #555555;
 }
+/*轮播图banner*/
+/*
+.banner{
+    width: 5360px;
+    height: 500px;
+    position: relative;
+    animation: move 12s linear infinite normal;
+}
+@keyframes move{
+    0%{
+        left: 0px;
+    }
+    5%{
+        left: 0px;
+    }
+    30%{
+        left: -1340px;
+    }
+    35%{
+        left: -1340px;
+    }
+    60%{
+        left: -2680px;
+    }
+    65%{
+        left: -2680px;
+    }
+    95%{
+        left: -4020px;
+    }
+    100%{
+        left: -4020px;
+    }
+}
+.banner img{
+    width: 1340px;
+    height: 500px;
+}
+*/
 
 /*标题栏*/
 .title{
